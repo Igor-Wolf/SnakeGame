@@ -1,16 +1,45 @@
 <!DOCTYPE html>
 <html lang="Pt-Br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snake Game</title>
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <h1>Snake Game</h1>
-    <canvas id="snake" width="512" height="512"></canvas>
+    <canvas id="snake" width="384" height="384"></canvas>
+    <div class="containerButtons">
+        <div class="cY">
+            <i></i>
+            <button class="up btn" onclick="pressButton('down')">
+                <i class="bi bi-caret-up"></i>
+            </button>
+        </div>
+        <div class="cX">
+            <div class="esquerda">
+                <button class="left btn" onclick="pressButton('left')">
+                    <i class="bi bi-caret-left"></i>
+                </button>
+            </div>
+            <div class="direita ">
+                <button class="right btn" onclick="pressButton('right')"> 
+                    <i class="bi bi-caret-right"></i>
+                </button>
+            </div>
+        </div>
+        <div class="cy">
+            <button class="down btn" onclick="pressButton('up')">
+                <i class="bi bi-caret-down"></i>
+            </button>
+        </div>
 
+    </div>
     <script src="script.js" defer></script>
 </body>
+
 </html>

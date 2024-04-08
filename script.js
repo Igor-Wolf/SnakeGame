@@ -10,15 +10,15 @@ snake[0] = {
 let direction = "right";
 let food = {
 
-    x: Math.floor(Math.random() * 15 + 1) * box,
-    y: Math.floor(Math.random() * 15 + 1) * box
+    x: Math.floor(Math.random() * 12 + 1) * box,
+    y: Math.floor(Math.random() * 12 + 1) * box
 }
 
 
 function criarBG() {
 
     context.fillStyle = "lightgreen"
-    context.fillRect(0, 0, 16 * box, 16 * box);
+    context.fillRect(0, 0, 14 * box, 14 * box);
 
 
 }
@@ -52,14 +52,26 @@ function update(event) {
 
 
 }
+
+function pressButton(direcao) {
+    
+
+    if (direcao == "left" && direction != "right") direction = "left";
+    if (direcao == "down" && direction != "up") direction = "down";
+    if (direcao == "right" && direction != "left") direction = "right";
+    if (direcao == "up" && direction != "down") direction = "up";
+
+
+
+}
 function iniciarJogo() {
 
     
 
-    if (snake[0].x > 15 * box && direction == "right") snake[0].x = 0;
-    if (snake[0].x < 0 && direction == "left") snake[0].x = 16 * box;
-    if (snake[0].y > 15 * box && direction == "up") snake[0].y = 0;
-    if (snake[0].y < 0 && direction == "down") snake[0].y = 16 * box;
+    if (snake[0].x > 12 * box && direction == "right") snake[0].x = 0;
+    if (snake[0].x < 0 && direction == "left") snake[0].x = 13* box;
+    if (snake[0].y > 12 * box && direction == "up") snake[0].y = 0;
+    if (snake[0].y < 0 && direction == "down") snake[0].y = 13 * box;
 
     for (i = 1; i < snake.length; i++){
 
@@ -89,8 +101,15 @@ function iniciarJogo() {
         snake.pop();
     }
     else {
-        food.x = Math.floor(Math.random() * 15 + 1) * box,
-        food.y = Math.floor(Math.random() * 15 + 1) * box
+        
+        
+
+
+
+        
+        
+        food.x = Math.floor(Math.random() * 11 + 1) * box,
+        food.y = Math.floor(Math.random() * 11 + 1) * box
         
     }
 
