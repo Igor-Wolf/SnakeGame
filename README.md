@@ -5,5 +5,5 @@ Esse projeto tem por finalidade desenvolver um jogo da cobrinha semelhante ao de
 ![Organização dos Arquivos](https://github.com/Igor-Wolf/Jogo-da-Memoria/blob/main/src/images/demo.png?raw=true)
 
 
-O jogo pode ser jogado [AQUI](https://igor-wolf.github.io/Jogo-da-Memoria/)
+O jogo pode ser jogado [AQUI](https://igor-wolf.github.io/SnakeGame/)
 
