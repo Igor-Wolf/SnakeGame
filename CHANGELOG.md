@@ -3,7 +3,6 @@
 
 ## 💡 Features Added
 
-- Jogo criado com sucesso
 - Adicionado botões
 - Responsivo com dispositivos móveis
   
